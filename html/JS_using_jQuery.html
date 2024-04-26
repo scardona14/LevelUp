@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#avatar-form').submit(function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var selectedAvatar = $('#avatar-select').val();
+            $('#selected-avatar').html('<img src="' + selectedAvatar + '">');
+        });
+    });
+</script>
